@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screen/product/product.dart';
-import 'package:riverpod_example/screen/product/productsProvider.dart';
+import 'package:riverpod_example/screen/ex_product/product.dart';
+import 'package:riverpod_example/screen/ex_product/productsProvider.dart';
 
 /// StateProvider 예제
 class ProductListScreen extends ConsumerWidget{
@@ -16,16 +16,15 @@ class ProductListScreen extends ConsumerWidget{
         actions: [
           DropdownButton<ProductSortType>(
             value: ref.watch(productSortTypeProvider),
-            onChanged: (value) =>
-            ref.read(productSortTypeProvider.notifier).state = value!,
+            onChanged: (value) => ref.read(productSortTypeProvider.notifier).state = value!,
             items: const [
               DropdownMenuItem(
                 value: ProductSortType.name,
-                child: Icon(Icons.sort_by_alpha),
+                child: Icon(Icons.sort_by_alpha, color: Colors.black,),
               ),
               DropdownMenuItem(
                 value: ProductSortType.price,
-                child: Icon(Icons.sort),
+                child: Icon(Icons.sort, color: Colors.black,),
               ),
             ],
           ),

@@ -3,8 +3,11 @@
 riverpod example
 
 - ValueProvider
-- StateProvider (& ref.read.update)
 - StateNotifierProvider
+- StateProvider
 - FutureProvider
 - StreamProvider
-- StateUpdate
+- StateUpdate (ref.read.update)
+- CombiningProvider
+- ConsumerStatefulWidget
+- ProviderObserver

@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screen/todo/todo.dart';
+import 'package:riverpod_example/screen/ex_todo/todo.dart';
 
 class TodosNotifier extends StateNotifier<List<Todo>> {
   TodosNotifier(): super([]);
@@ -8,7 +8,7 @@ class TodosNotifier extends StateNotifier<List<Todo>> {
   void addTodo(Todo todo) {
     /*
     state 는 immutable 데이터이기 때문에 직접적으로 state 를 변경할 수 없다.
-    state = [...state, todo];
+    state = [...state, ex_todo];
     이와 같이 새로운 state를 생성해주도록 하자
    */
     state = [...state, todo];

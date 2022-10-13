@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screen/todo/todo.dart';
-import 'package:riverpod_example/screen/todo/todos_notifier.dart';
+import 'package:riverpod_example/screen/ex_todo/todo.dart';
+import 'package:riverpod_example/screen/ex_todo/todos_notifier.dart';
 
 /// StateNotifierProvider 예제
 class TodoListScreen extends ConsumerWidget {

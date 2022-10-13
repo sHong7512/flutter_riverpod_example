@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_example/screen/product/product.dart';
+import 'package:riverpod_example/screen/ex_product/product.dart';
 
 final _products = [
   Product(name: 'iPhone', price: 999),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final futureProvider = FutureProvider<int>((ref) {
-  return Future.delayed(const Duration(seconds: 3), () => 5);
+  return Future.delayed(const Duration(milliseconds: 1000), () => 5);
 });
 
 class FutureProviderScreen extends ConsumerWidget {
